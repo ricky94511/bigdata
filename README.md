@@ -1,2 +1,3 @@
 # bigdata
-bigdata_homework
+
+kmeans 分析步驟
