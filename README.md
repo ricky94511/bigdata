@@ -55,10 +55,11 @@ cluster2:<br />
 為3-5，但是皆沒辦法看出每群明顯的差異。
 kibana分析
 -----------------------------------------------------------------------------
-
+利用logstash，抓出ip，並利用Geo-IP抓出各個IP的地理位置並畫出圖
 ![GitHub](https://cloud.githubusercontent.com/assets/12468475/7665356/0fad2f1e-fbe6-11e4-97b0-71d116531f08.jpg "GitHub,Social Coding")
 
+由下圖我們可以看出亞洲為Spam的大宗來源
 ![](https://cloud.githubusercontent.com/assets/12468475/7665390/0e937484-fbe7-11e4-9a90-89368b217ca0.jpg)
 
-
+圖下為前一百Spam IP來源，可發現多為同一個IP寄出
 ![](https://cloud.githubusercontent.com/assets/12468475/7665391/1eb60020-fbe7-11e4-8ab6-8aa1a2f061ca.jpg)
