@@ -1,0 +1,13 @@
+msg.full <- function(path)
+{
+  con <- file(path, open = "rt", encoding = "latin1")
+  msg <- readLines(con)
+  close(con)
+  return(paste(msg, collapse = ""))
+}
+
+spam.docs <- dir(spam.path)
+spam.docs <- spam.docs[which(spam.docs != "cmds")]
+all.spam <- sapply(spam.docs,
+                   function(p) msg.full(file.path(spam.path, p)))
+easy<-as.data.frame(all.spam)
