@@ -1,4 +1,4 @@
-# bigdata
+# Bigdata
 
 logstash 資料前處理  <br />
 -----------------------------------------------------------------------------
@@ -63,3 +63,8 @@ kibana分析
 
 圖下為前一百Spam IP來源，可發現多為同一個IP寄出
 ![](https://cloud.githubusercontent.com/assets/12468475/7665391/1eb60020-fbe7-11e4-8ab6-8aa1a2f061ca.jpg)
+
+
+Group 
+M10301009 張凱棠 
+M10301001 陳峻廷
