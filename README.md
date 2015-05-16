@@ -1,4 +1,6 @@
 # bigdata
+logstash 資料前處理  <br />
+使用R將每一封垃圾信件，讀到同一個data.frame的格式中，並移除所有換行字元 <br />
 
 kmeans 分析步驟
 
