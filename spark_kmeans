@@ -1,3 +1,37 @@
 
-# we use 
-dd
+# we use scala 2.10.4 spark1.1.0 hadoop1.x
+# 1 master 2 slaves
+
+package bigdata
+import org.apache.spark.mllib.clustering.KMeans
+import org.apache.spark.mllib.linalg.Vectors
+import scala.math.random
+import org.apache.spark._
+import SparkContext._
+/**
+ * Created by ricky on 2015/5/15.
+ */
+object kmeans {
+
+  def main(args: Array[String]) {
+    val conf = new SparkConf().setAppName("tv_ad")
+    val sc = new SparkContext(conf)
+    val data = sc.textFile("/home/ubuntu/spark/kmeans.txt")
+    val parsedData = data.map(s => Vectors.dense(s.split(' ').map(_.toDouble))).cache()
+
+    // Cluster the data into two classes using KMeans
+    val numClusters = 3
+    val numIterations = 20
+    val clusters = KMeans.train(parsedData, numClusters, numIterations)
+
+    // Evaluate clustering by computing Within Set Sum of Squared Errors
+    val WSSSE = clusters.computeCost(parsedData)
+    println("Within Set Sum of Squared Errors = " + WSSSE)
+  }
+
+}
+
+#接下來要包成jar檔再去spark上執行
+# cd 到spark後
+
+./bin/spark-submit --class bigdata.kmeans --master spark://172.30.0.139:7077 /home/ubuntu/spark/kmeans.jar
