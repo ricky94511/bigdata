@@ -1,0 +1,34 @@
+input {
+  file {
+    path => "/Users/ricky/Desktop/data_2015.csv"
+    start_position => beginning
+    sincedb_path => "/dev/null"
+  }
+}
+
+filter {
+  
+    
+    grok {
+      
+      
+      
+      match => { "message" => "%{IP:ip}" }
+
+      
+    }
+    geoip{
+
+
+    	source => "ip"
+    	
+    }
+   
+  
+}
+
+output {
+ 
+  
+  stdout { codec => rubydebug }
+}
