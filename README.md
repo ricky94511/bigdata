@@ -52,4 +52,4 @@ cluster2:<br />
 從分群顯果，可以看出，HTML TAG是垃圾郵件最明顯的特徵，cluster2就是很明顯的有html<br /> tag的垃圾郵件，而cluster1則是屬於那種幾乎沒有html tag很難分出是垃圾郵件的信件。另外我們試了當K
 為3-5，但是皆沒辦法看出每群明顯的差異。
 
-![](https://www.google.com.tw/search?hl=zh-TW&site=imghp&tbm=isch&source=hp&biw=1147&bih=783&q=bus&oq=bus&gs_l=img.3.0.0l10.1227.4621.0.6330.4.4.0.0.0.0.38.133.4.4.0.msedr...0...1ac.1.64.img..0.4.131.6yrAnftWoys#imgrc=3gnLMOuuNO_LeM%253A%3BtxK4vpKdSUPVcM%3Bhttp%253A%252F%252Fupload.wikimedia.org%252Fwikipedia%252Fcommons%252Fa%252Fac%252FArriva_T6_nearside.JPG%3Bhttp%253A%252F%252Fen.wikipedia.org%252Fwiki%252FBus%3B1735%3B1732)
+![](/Users/ricky/Desktop/1.jpg)
